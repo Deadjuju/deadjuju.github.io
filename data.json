@@ -1,0 +1,284 @@
+{
+  "_note": "Source unique. 'categorie' décide du bloc ET du style d'affichage : 'diplome' -> Diplômes & titres (cartes), 'certification' -> Certifications (cartes), 'cours' -> Cours & modules (liste compacte). 'tags' = thèmes (filtre, communs aux blocs). 'lien' optionnel -> ✓ vérifiable doré. 'emetteur'/'date' optionnels. Ajouter un module = un petit bloc {categorie:'cours', titre, date}. Date/lieu de naissance volontairement absents.",
+  "profil": {
+    "nom": "Julien Garcia",
+    "titre": "Consultant IAM Senior · Expert Usercube",
+    "accroche": "Mes certifications, diplômes et formations — réunis ici, filtrables par thème et vérifiables.",
+    "liens": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/julien-garcia-283974225"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Deadjuju"
+      }
+    ]
+  },
+  "credentials": [
+    {
+      "categorie": "diplome",
+      "titre": "Développeur Concepteur Logiciel — Titre RNCP niveau 6",
+      "emetteur": "OpenClassrooms",
+      "date": "2023",
+      "tags": [
+        "Dev",
+        "Python"
+      ]
+    },
+    {
+      "categorie": "diplome",
+      "titre": "Licence Pro — Maîtrise de l'Énergie & Environnement",
+      "emetteur": "Alternance · Bilan Carbone / RSE",
+      "tags": [
+        "Énergie",
+        "RSE"
+      ]
+    },
+    {
+      "categorie": "diplome",
+      "titre": "DUT Génie Thermique & Énergie",
+      "tags": [
+        "Énergie"
+      ]
+    },
+    {
+      "categorie": "diplome",
+      "titre": "Baccalauréat S — option SI / Maths",
+      "tags": [
+        "Sciences"
+      ]
+    },
+    {
+      "categorie": "diplome",
+      "titre": "3ᵉ cycle — Guitare classique",
+      "emetteur": "Conservatoire",
+      "tags": [
+        "Musique"
+      ]
+    },
+    {
+      "categorie": "certification",
+      "titre": "Usercube Certified Implementer",
+      "emetteur": "Netwrix (Usercube)",
+      "date": "2023",
+      "tags": [
+        "IAM",
+        "Usercube"
+      ]
+    },
+    {
+      "categorie": "certification",
+      "titre": "Professional Scrum Master I (PSM 1)",
+      "emetteur": "Scrum.org",
+      "date": "2026",
+      "tags": [
+        "Agile",
+        "Scrum"
+      ],
+      "lien": "https://scrum.org/certificates/1322592"
+    },
+    {
+      "categorie": "certification",
+      "titre": "Rapidité de développement — Niveau Légende",
+      "emetteur": "CodinGame",
+      "date": "2022",
+      "tags": [
+        "Dev"
+      ],
+      "lien": "https://www.codingame.com/certification/eSkWDTFx7LorN4ZaJqFbEA"
+    },
+    {
+      "categorie": "certification",
+      "titre": "100 Days of Code: The Complete Python Pro Bootcamp",
+      "emetteur": "Udemy · Dr. Angela Yu · 64 h",
+      "date": "2022",
+      "tags": [
+        "Dev",
+        "Python"
+      ],
+      "lien": "https://ude.my/UC-05e7a973-e792-477c-8f5b-fb530db70f72"
+    },
+    {
+      "categorie": "certification",
+      "titre": "La Formation Complète Django",
+      "emetteur": "Udemy · Docstring · 15 h",
+      "date": "2022",
+      "tags": [
+        "Dev",
+        "Django"
+      ],
+      "lien": "https://ude.my/UC-6997a232-d13a-420d-9a8e-6da6ac0db855"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Apprenez à créer votre site web avec HTML5 et CSS3",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Apprenez à utiliser la ligne de commande dans un terminal",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Comprendre le Web",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Apprenez à programmer avec JavaScript",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Apprenez les bases du langage Python",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Initiez-vous à Python pour l'analyse de données",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Mettez en place votre environnement Python",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Gérez du code avec Git et GitHub",
+      "date": "2021"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Mettez en place un système de veille informationnelle",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Apprenez à apprendre",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Développez vos soft skills",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Gérez votre temps efficacement",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Prenez la parole en public",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Initiez-vous à la gestion de projet agile",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Concevez une interface cliquable",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Appliquez le principe du Domain-Driven Design à votre application",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Apprenez la programmation orientée objet avec Python",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Préparez-vous aux tests techniques pour devenir développeur",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Débutez avec le framework Django",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Allez plus loin avec le framework Django",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Mettez en place une API avec Django REST Framework",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Sécurisez vos applications web avec l'OWASP",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Adoptez les API REST pour vos projets web",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Testez votre projet Python",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Débuggez un projet Python",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Concevez un site avec Flask",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Optimisez votre déploiement en créant des conteneurs avec Docker",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Écrivez du code Python maintenable",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Découvrez la méthodologie DevOps",
+      "date": "2022"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Débutez avec React",
+      "date": "2023"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Découvrez l'univers de la cybersécurité",
+      "date": "2023"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Concevez votre réseau TCP/IP",
+      "date": "2023"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Administrez un système Linux",
+      "date": "2023"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Montez un serveur de fichiers sous Linux",
+      "date": "2023"
+    }
+  ]
+}
