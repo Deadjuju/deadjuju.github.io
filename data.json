@@ -1,5 +1,5 @@
 {
-  "_note": "Source unique. 'categorie' décide du bloc ET du style d'affichage : 'diplome' -> Diplômes & titres (cartes), 'certification' -> Certifications (cartes), 'cours' -> Cours & modules (liste compacte). 'tags' = thèmes (filtre, communs aux blocs). 'lien' optionnel -> ✓ vérifiable doré. 'emetteur'/'date' optionnels. Ajouter un module = un petit bloc {categorie:'cours', titre, date}. Date/lieu de naissance volontairement absents.",
+  "_note": "Source unique. 'categorie' décide du bloc ET du style : 'diplome'->Diplômes & titres (cartes), 'certification'->Certifications (cartes), 'cours'->Cours & modules (liste compacte, groupée par émetteur). 'tags'=thèmes (filtre). 'lien' optionnel -> ✓ vérifiable doré. 'emetteur'/'date' optionnels. Ajouter un cours = {categorie:'cours', titre, date, emetteur}. Date/lieu de naissance volontairement absents.",
   "profil": {
     "nom": "Julien Garcia",
     "titre": "Consultant IAM Senior · Expert Usercube",
@@ -7,7 +7,7 @@
     "liens": [
       {
         "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/julien-garcia-283974225"
+        "url": "https://www.linkedin.com/in/A-REMPLACER"
       },
       {
         "label": "GitHub",
@@ -113,172 +113,248 @@
     {
       "categorie": "cours",
       "titre": "Apprenez à créer votre site web avec HTML5 et CSS3",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Apprenez à utiliser la ligne de commande dans un terminal",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Comprendre le Web",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Apprenez à programmer avec JavaScript",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Apprenez les bases du langage Python",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Initiez-vous à Python pour l'analyse de données",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Mettez en place votre environnement Python",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Gérez du code avec Git et GitHub",
-      "date": "2021"
+      "date": "2021",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Mettez en place un système de veille informationnelle",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Apprenez à apprendre",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Développez vos soft skills",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Gérez votre temps efficacement",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Prenez la parole en public",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Initiez-vous à la gestion de projet agile",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Concevez une interface cliquable",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Appliquez le principe du Domain-Driven Design à votre application",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Apprenez la programmation orientée objet avec Python",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Préparez-vous aux tests techniques pour devenir développeur",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Débutez avec le framework Django",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Allez plus loin avec le framework Django",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Mettez en place une API avec Django REST Framework",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Sécurisez vos applications web avec l'OWASP",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Adoptez les API REST pour vos projets web",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Testez votre projet Python",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Débuggez un projet Python",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Concevez un site avec Flask",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Optimisez votre déploiement en créant des conteneurs avec Docker",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Écrivez du code Python maintenable",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Découvrez la méthodologie DevOps",
-      "date": "2022"
+      "date": "2022",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Débutez avec React",
-      "date": "2023"
+      "date": "2023",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Découvrez l'univers de la cybersécurité",
-      "date": "2023"
+      "date": "2023",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Concevez votre réseau TCP/IP",
-      "date": "2023"
+      "date": "2023",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Administrez un système Linux",
-      "date": "2023"
+      "date": "2023",
+      "emetteur": "OpenClassrooms"
     },
     {
       "categorie": "cours",
       "titre": "Montez un serveur de fichiers sous Linux",
-      "date": "2023"
+      "date": "2023",
+      "emetteur": "OpenClassrooms"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Git Fundamentals",
+      "date": "2025",
+      "emetteur": "Pluralsight"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Git: The Big Picture",
+      "date": "2025",
+      "emetteur": "Pluralsight"
+    },
+    {
+      "categorie": "cours",
+      "titre": "How Git Works",
+      "date": "2025",
+      "emetteur": "Pluralsight"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Introducing Scrum",
+      "date": "2025",
+      "emetteur": "Pluralsight"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Introducing Scrum Accountabilities (Roles)",
+      "date": "2025",
+      "emetteur": "Pluralsight"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Python 3: The Big Picture",
+      "date": "2026",
+      "emetteur": "Pluralsight"
+    },
+    {
+      "categorie": "cours",
+      "titre": "Introducing Scrum Events",
+      "date": "2026",
+      "emetteur": "Pluralsight"
     }
   ]
 }

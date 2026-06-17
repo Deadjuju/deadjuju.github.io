@@ -6,6 +6,20 @@
   <title>Julien Garcia — Identité &amp; credentials</title>
   <meta name="description" content="Diplômes, titres et certifications de Julien Garcia, séparés, filtrables par thème et vérifiables.">
 
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deadjuju.github.io/">
+  <meta property="og:title" content="Julien Garcia — Identité &amp; credentials">
+  <meta property="og:description" content="Consultant IAM Senior · Expert Usercube. Diplômes, titres et certifications réunis, filtrables et vérifiables.">
+  <meta property="og:image" content="https://deadjuju.github.io/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Julien Garcia — Identité &amp; credentials">
+  <meta name="twitter:description" content="Consultant IAM Senior · Expert Usercube. Diplômes, titres et certifications réunis, filtrables et vérifiables.">
+  <meta name="twitter:image" content="https://deadjuju.github.io/og.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -361,12 +375,16 @@
 
     function renderCoursePanel(items){
       const panel = h('div', { class:'coursepanel' });
-      const byYear = {};
-      items.forEach(m => { (byYear[m.date || '—'] ||= []).push(m.titre); });
-      Object.keys(byYear).sort().forEach(year => {
-        panel.append(h('p', { class:'y', text: year }));
+      const byProv = {};
+      items.forEach(m => { const k = m.emetteur || 'Autres'; (byProv[k] ||= []).push(m); });
+      Object.keys(byProv).sort((a, b) => a.localeCompare(b, 'fr')).forEach(prov => {
+        const list = byProv[prov].slice().sort((a, b) => String(a.date).localeCompare(String(b.date)));
+        const years = list.map(m => m.date).filter(Boolean).sort();
+        const range = years.length ? (years[0] === years[years.length - 1] ? years[0] : years[0] + '–' + years[years.length - 1]) : '';
+        const label = prov + ' · ' + list.length + ' cours' + (range ? ' · ' + range : '');
+        panel.append(h('p', { class:'y', text: label }));
         const ul = h('ul');
-        byYear[year].forEach(t => ul.append(h('li', { text: t })));
+        list.forEach(m => ul.append(h('li', { text: m.titre })));
         panel.append(ul);
       });
       return panel;
