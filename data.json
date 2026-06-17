@@ -7,7 +7,7 @@
     "liens": [
       {
         "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/A-REMPLACER"
+        "url": "https://www.linkedin.com/in/julien-garcia-283974225"
       },
       {
         "label": "GitHub",
@@ -23,7 +23,8 @@
       "date": "2023",
       "tags": [
         "Dev",
-        "Python"
+        "Python",
+        "Django"
       ]
     },
     {
