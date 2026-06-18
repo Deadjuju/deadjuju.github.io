@@ -1,8 +1,9 @@
 {
-  "_note": "Source unique. 'categorie' décide du bloc ET du style : 'diplome'->Diplômes & titres (cartes), 'certification'->Certifications (cartes), 'cours'->Cours & modules (liste compacte, groupée par émetteur). 'tags'=thèmes (filtre). 'lien' optionnel -> ✓ vérifiable doré. 'emetteur'/'date' optionnels. Ajouter un cours = {categorie:'cours', titre, date, emetteur}. Date/lieu de naissance volontairement absents.",
+  "_note": "Source unique. 'categorie' décide du bloc ET du style : 'mission'->Réalisations (cartes récit), 'diplome'->Diplômes & titres (cartes), 'certification'->Certifications (cartes), 'cours'->Cours & modules (liste compacte). Missions : 'secteur','periode','role','recit' (paragraphes séparés par une ligne vide ; **gras** entre doubles astérisques),'resultat','perimetre'. 'tags'=thèmes (filtre). 'lien' optionnel -> ✓ vérifiable doré. Date/lieu de naissance volontairement absents.",
   "profil": {
     "nom": "Julien Garcia",
     "titre": "Consultant IAM Senior · Expert Usercube",
+    "apropos": "De la librairie musicale au développement, puis à la gestion des identités : mon parcours n'a rien de linéaire — et j'y tiens. J'en ai gardé le goût de transmettre (formateur, accompagnateur, musicien depuis l'enfance) et je m'attache autant à livrer un projet qu'à rendre les équipes autonomes. C'est cette double corde, technique et pédagogique, que je fais grandir aujourd'hui vers la coordination d'équipes IAM. Cette page réunit mes réalisations, certifications et diplômes — filtrables par thème.",
     "accroche": "Mes certifications, diplômes et formations — réunis ici, filtrables par thème et vérifiables.",
     "liens": [
       {
@@ -16,6 +17,49 @@
     ]
   },
   "credentials": [
+    {
+      "categorie": "mission",
+      "titre": "Décommissionnement d'Oracle OIM au profit d'Usercube",
+      "secteur": "Industrie du luxe (Suisse)",
+      "periode": "2023 – 2024 · ~14 mois",
+      "role": "Consultant IAM",
+      "recit": "Le groupe devait sortir entièrement de sa solution IAM historique (Oracle OIM), vieillissante, au profit d'Usercube — sur un calendrier serré et un paysage dense : ~35 000 identités, 9 annuaires AD, une dizaine de sources autoritaires et plusieurs populations (internes, externes, partenaires, agences, revendeurs, invités…).\n\nEn équipe resserrée avec l'architecte et le tech lead, j'ai pris en charge l'**analyse des flux entrants et la fiabilisation de la qualité des données** — le socle qui conditionne toute migration IGA. J'ai co-construit l'intégration Usercube : une dizaine de connecteurs PowerShell normalisés SCIM, plusieurs AD et sources autoritaires, l'application SAP IdM en REST avec remontée sélective des rôles, ServiceNow pour les demandes de rôles, et le modèle de rôles — puis automatisé les extractions de reporting vers les outils de conformité et de SIEM.\n\nJ'ai enfin rédigé le **dossier de spécifications détaillées (SFTD)** de tout le projet — Swagger de l'API SCIM et diagrammes de classes inclus.",
+      "resultat": "**Oracle OIM entièrement retiré** sur le périmètre des ~35 000 identités : legacy éteint, référentiels techniques fiabilisés au passage, et un SFTD désormais réutilisé comme **référence interne** sur nos projets Usercube.",
+      "perimetre": "~35 000 identités · 9 ADs · ~10 connecteurs PowerShell (SCIM) · SAP HR · ServiceNow · OIM → Usercube",
+      "tags": [
+        "IAM",
+        "Usercube"
+      ]
+    },
+    {
+      "categorie": "mission",
+      "titre": "Mise en service d'Usercube & autonomisation du client",
+      "secteur": "Banque en ligne",
+      "periode": "depuis juil. 2024 · en cours",
+      "role": "Consultant IAM",
+      "recit": "Arrivé comme **intégrateur** pour déployer Usercube, j'ai vu mon rôle évoluer vers un poste technico-fonctionnel et d'accompagnement. Après le départ du chef de projet, **j'ai porté la mission en autonomie** — interlocuteur technique principal côté client — tout en assurant l'intégration en parallèle.\n\nJ'ai déployé une brique IGA couvrant toute la chaîne : 1 AD, applications en connecteurs indirects via groupes AD (rôle-mapping), raccordement à ServiceNow pour les demandes de matériel et le pilotage par ticket des accès et applications non connectés à Usercube, campagnes de recertification et notifications sur mesure.\n\nEn parallèle, j'ai **acculturé les équipes client à l'IAM** (modèle de rôles, rôles simples et composés, règles d'assignation automatique), aidé à structurer leurs données RH, puis **encadré un consultant junior** que j'ai fait monter en compétence — il intervient aujourd'hui en autonomie. Je reprends désormais le développement avec, en ligne de mire, la formation d'un profil débutant sur la techno.",
+      "resultat": "Projet relancé et **porté en solo** après le départ du chef de projet ; une brique IGA complète (cycle de vie, demandes, recertification, gouvernance du non-connecté) ; et surtout des **équipes rendues autonomes** — client acculturé à l'IAM, junior formé et opérationnel seul.",
+      "perimetre": "~1 000 identités · 1 AD · connecteurs indirects (rôle-mapping) · ServiceNow · recertification · notifications custom",
+      "tags": [
+        "IAM",
+        "Usercube"
+      ]
+    },
+    {
+      "categorie": "mission",
+      "titre": "Scrum Master d'un programme IAM à grande échelle",
+      "secteur": "Industrie du luxe (France)",
+      "periode": "depuis janv. 2026 · en cours",
+      "role": "Scrum Master",
+      "recit": "Sur un programme Usercube mature et de grande ampleur — dizaines de milliers d'identités, gestion des identités non-humaines, provisioning de groupes comme objets Usercube — j'interviens non pas comme développeur mais comme **Scrum Master de l'équipe**.\n\nMon rôle : garantir le bon fonctionnement de l'équipe et son autonomie, fluidifier la livraison et entretenir une dynamique agile déjà solide. Pour m'investir pleinement dans ce rôle nouveau pour moi, j'ai passé et obtenu la **certification PSM I (100 % de bonnes réponses)**.",
+      "resultat": "Continuité et fluidité d'un programme IAM critique, et une **montée en puissance assumée sur l'animation d'équipe** — un pas concret vers la coordination.",
+      "perimetre": "Dizaines de milliers d'identités · identités non-humaines · groupes provisionnés · équipe Scrum",
+      "tags": [
+        "Agile",
+        "Scrum",
+        "IAM"
+      ]
+    },
     {
       "categorie": "diplome",
       "titre": "Développeur Concepteur Logiciel — Titre RNCP niveau 6",
